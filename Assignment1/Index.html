@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School timetable</title>
+    <style>
+        table, td, th {
+  border: 2px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  height: 70px;
+}
+
+td{
+    height: 30px;
+}
+    </style>
+</head>
+<body>
+    <body style="background-color:cadetblue">
+    <h3 style="color:honeydew;text-align: center;">School Timetable</h3>
+    <TABLE border=4 rules=all>
+        <THEAD> 
+        <TR>
+        <TH style="background-color:rgb(255, 99, 71);font-family:Algerain;">Time</TH>
+        <TH style="background-color:rgb(255, 99, 71, 0.5);font-family:Algerain;">Monday</TH>
+        <TH style="background-color:rgba(255, 99, 71, 0.5);font-family:Algerain;">Tuesday</TH>
+        <TH style="background-color:rgb(255, 99, 71, 0.5);font-family:Algerain;">Wednesday</TH>
+        <TH style="background-color:rgba(255, 99, 71, 0.5);font-family:Algerain;">Thursday</TH>
+        <TH style="background-color:rgba(255, 99, 71, 0.5);font-family:Algerain;">Friday</TH>
+        </TR> 
+        </THEAD> 
+        <TBODY> 
+        <TR>
+        <TD style="font-family:Castellar;">8:00-8:45</TD>
+        <TD style="font-family:Castellar;">Ancient Greek</TD>
+        <TD style="font-family:Castellar;">Ancient Greek</TD>
+        <TD style="font-family:Castellar;">Mathematics</TD>
+        <TD style="font-family:Castellar;">Physical Education</TD>
+        <TD style="font-family:Castellar;">History</TD>
+        </TR> 
+        <TR>
+        <TD style="font-family:Castellar;">8:50-9:35</TD>
+        <TD style="font-family:Castellar;">Religious Education</TD>
+        <TD style="font-family:Castellar;">Mthematics</TD>
+        <TD style="font-family:Castellar;">Modern Greek</TD>
+        <TD style="font-family:Castellar;">Science</TD>
+        <TD style="font-family:Castellar;">Geography</TD>
+        </TR> 
+        <TR>
+        <TD style="font-family:Castellar;">9:45-10:30</TD>
+        <TD style="font-family:Castellar;">ICT</TD>
+        <TD style="font-family:Castellar;">Physics</TD>
+        <TD style="font-family:Castellar;">Ancient Greek</TD>
+        <TD style="font-family:Castellar;">Modern Greek</TD>
+        <TD style="font-family:Castellar;">Religious Education</TD>
+        </TR> 
+        <TR>
+        <TD style="font-family:Castellar;">10:35-11:20</TD>
+        <TD style="font-family:Castellar;">Physical Education</TD>
+        <TD style="font-family:Castellar;">History</TD>
+        <TD style="font-family:Castellar;">Home economics</TD>
+        <TD style="font-family:Castellar;">Home economics</TD>
+        <TD style="font-family:Castellar;">Modern Greek</TD>
+        </TR>
+        <TR>
+        <TD style="font-family:Castellar;">11:30-12:10</TD>
+        <TD style="font-family:Castellar;">Mathematics</TD>
+        <TD style="font-family:Castellar;">German</TD>
+        <TD style="font-family:Castellar;">Geography</TD>
+        <TD style="font-family:Castellar;">Chemistry</TD>
+        <TD style="font-family:Castellar;">Ancient Greek</TD>
+        </TR>
+        <TR>
+        <TD style="font-family:Castellar;">12:15-12:55</TD>
+        <TD style="font-family:Castellar;">Modern Greek</TD>
+        <TD style="font-family:Castellar;">Music</TD>
+        <TD style="font-family:Castellar;">German</TD>
+        <TD style="font-family:Castellar;">Art</TD>
+        <TD style="font-family:Castellar;">Technology</TD>
+        </TR>
+        <TR>
+        <TD style="font-family:Castellar;">1:00-1:35</TD>
+        <TD style="font-family:Castellar;">Ancient Greek</TD>
+        <TD style="font-family:Castellar;">Physical Education</TD>
+        <TD style="font-family:Castellar;">English</TD>
+        <TD style="font-family:Castellar;">English</TD>
+        <TD style="font-family:Castellar;">Mathematics</TD>
+        </TR>
+        </TBODY> 
+        </TABLE>
+        
+    <form>
+      <fieldset>
+          <legend>Personal Information</legend>
+      <label for="fname">FirstName:</label>
+      <input type="text" id="fname" placeholder="First Name">
+      <label for="Lastname">LastName:</label>
+      <input type="text" id="Lastname" placeholder="Last Name"><br>
+      </br>
+      
+          <label for="Male">Male:</label>
+          <input type="radio" id="Male" name="gender" value="Male">
+          <label for="Female">Female:</label>
+          <input type="radio" id="Female" name="gender" value="FEmale">
+          <label for="Other">Other:</label>
+          <input type="radio" id="Other" name="gender" value="Other">
+      <br>
+      <br>
+      <label for="Dateofbirth">Date of Birth :</label>
+      <input type="date" id="Dateofbirth"><br>
+      </br>
+      <label for="Email">E-mail :</label>
+      <input type="email" id="Email" placeholder="Enter Your Email"><br>
+      <br>
+      <label for="phonenumber">Phone</label>
+      <input type="number" id="phonenumber" placeholder="+91"><br>
+      <br>
+      <label for="height">Height</label>
+      <input type="height" id="height" placeholder="Height in Feet">
+      
+  </fieldset>
+  <fieldset>
+    <legend>Education</legend>
+    <label for="schoolname">School Name :</label>
+    <input type="text" id="schoolname" placeholder="School Name"><br>
+    <br>
+    <label for="class">Class :</label>
+    <input type="text" id="class" placeholder="Enter Class"><br>
+    <br>
+    <label for="stream">Stream :</label>
+    <select id="stream" placeholder="Stream">
+        <option value="stream">Stream</option>
+        <option value="Non-med">Non-Medical</option>
+        <option value="Medical">Medical</option>
+        <option value="commerce">Commerce</option>
+        <option value="arts">Arts</option>
+    </select><br>
+    <br>
+    <label for="marksheet">Marksheet :</label>
+    <input type="file" id="marksheet" >
+</fieldset><br>
+<button>Submit</button>
+</body>
+</html>
